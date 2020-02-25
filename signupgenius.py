@@ -12,7 +12,7 @@ file_in = open("credentials.txt", "r")
 usr = file_in.readline()
 pwd = file_in.readline()
 
-driver = webdriver.Chrome(executable_path='/Users/snagaraj/Downloads/chromedriver')
+driver = webdriver.Chrome()
 driver.get("https://www.signupgenius.com/register")
 
 time.sleep(5)
@@ -33,8 +33,8 @@ username_box.send_keys(usr)
 time.sleep(3)
 
 
-#driver = webdriver.Chrome(executable_path='/Users/snagaraj/Downloads/chromedriver')
-driver.get("https://www.signupgenius.com/go/30E084FADA628A1F85-wed2261")
+#driver = webdriver.Chrome()
+#driver.get("PUT LINK HERE")  UNCOMMENT THIS
 
 time.sleep(5)	# Replace with Selenium waits
 
